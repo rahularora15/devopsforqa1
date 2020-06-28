@@ -63,27 +63,18 @@ stages
 	stage('Docker Build Image')
 	{
 		steps
-<<<<<<< HEAD
-		{ 
-		bat "docker build -t rahul/random-image ./
-			
-=======
+		
 		{
 			bat "docker build -t rahul/random-image ./"
->>>>>>> b49434c3829d9bf193fe1740426a908ed9b63e7c
 		}
 	}
 	
 	stage('Docker Deployment-container run')
 	{
 		steps
-		{
-<<<<<<< HEAD
+		{	
 		bat "docker run -d -p 8081:8080 rahul/random-image"
-			
-=======
-			bat "docker run -d -p 8081:8080 rahul/random-image"
->>>>>>> b49434c3829d9bf193fe1740426a908ed9b63e7c
+
 		}
 	}	
 	
